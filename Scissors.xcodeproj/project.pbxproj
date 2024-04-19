@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7632D53C2BBF233900CA9DFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632D53B2BBF233900CA9DFD /* AppDelegate.swift */; };
+		7632D53E2BBF233900CA9DFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632D53D2BBF233900CA9DFD /* SceneDelegate.swift */; };
+		7632D5402BBF233900CA9DFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632D53F2BBF233900CA9DFD /* ViewController.swift */; };
+		7632D5432BBF233900CA9DFD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7632D5422BBF233900CA9DFD /* Base */; };
+		7632D5452BBF233A00CA9DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7632D5442BBF233A00CA9DFD /* Assets.xcassets */; };
+		7632D5482BBF233A00CA9DFD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7632D5472BBF233A00CA9DFD /* Base */; };
+		7632D5522BBF236E00CA9DFD /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768FA4D02BB7294D001DD2FB /* AuthenticationServices.framework */; };
+		7632D55C2BBF236E00CA9DFD /* ssoe-ios.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7632D5512BBF236E00CA9DFD /* ssoe-ios.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7632D5752BBF9CF100CA9DFD /* Cookies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632D5732BBF9CF100CA9DFD /* Cookies.swift */; };
+		767C483C2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767C483A2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift */; };
+		76E195252BD0BAD0002442A5 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E195232BD0BAD0002442A5 /* AuthenticationViewController.swift */; };
+		76E1952A2BD0BD49002442A5 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76E195282BD0BD49002442A5 /* AuthenticationViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7632D55A2BBF236E00CA9DFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 768FA4B02BB7290F001DD2FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7632D5502BBF236E00CA9DFD;
+			remoteInfo = "ssoe-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7632D5602BBF236E00CA9DFD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7632D55C2BBF236E00CA9DFD /* ssoe-ios.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7632D5392BBF233900CA9DFD /* Scissors-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scissors-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7632D53B2BBF233900CA9DFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7632D53D2BBF233900CA9DFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7632D53F2BBF233900CA9DFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7632D5422BBF233900CA9DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7632D5442BBF233A00CA9DFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7632D5472BBF233A00CA9DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7632D5492BBF233A00CA9DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7632D5512BBF236E00CA9DFD /* ssoe-ios.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ssoe-ios.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7632D5592BBF236E00CA9DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7632D56F2BBF972800CA9DFD /* Scissors-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Scissors-ios.entitlements"; sourceTree = "<group>"; };
+		7632D5732BBF9CF100CA9DFD /* Cookies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cookies.swift; sourceTree = "<group>"; };
+		767C483A2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationViewController+Shared.swift"; sourceTree = "<group>"; };
+		768FA4D02BB7294D001DD2FB /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		76E195232BD0BAD0002442A5 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		76E195292BD0BD49002442A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AuthenticationViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7632D5362BBF233900CA9DFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7632D54E2BBF236E00CA9DFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7632D5522BBF236E00CA9DFD /* AuthenticationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7632D53A2BBF233900CA9DFD /* Scissors-ios */ = {
+			isa = PBXGroup;
+			children = (
+				7632D56F2BBF972800CA9DFD /* Scissors-ios.entitlements */,
+				7632D53B2BBF233900CA9DFD /* AppDelegate.swift */,
+				7632D53D2BBF233900CA9DFD /* SceneDelegate.swift */,
+				7632D53F2BBF233900CA9DFD /* ViewController.swift */,
+				7632D5412BBF233900CA9DFD /* Main.storyboard */,
+				7632D5442BBF233A00CA9DFD /* Assets.xcassets */,
+				7632D5462BBF233A00CA9DFD /* LaunchScreen.storyboard */,
+				7632D5492BBF233A00CA9DFD /* Info.plist */,
+			);
+			path = "Scissors-ios";
+			sourceTree = "<group>";
+		};
+		7632D5532BBF236E00CA9DFD /* ssoe-ios */ = {
+			isa = PBXGroup;
+			children = (
+				76E195282BD0BD49002442A5 /* AuthenticationViewController.xib */,
+				76E195232BD0BAD0002442A5 /* AuthenticationViewController.swift */,
+				7632D5592BBF236E00CA9DFD /* Info.plist */,
+			);
+			path = "ssoe-ios";
+			sourceTree = "<group>";
+		};
+		767C483D2BBFB26300AFA32F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				767C483A2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift */,
+				7632D5732BBF9CF100CA9DFD /* Cookies.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		768FA4AF2BB7290F001DD2FB = {
+			isa = PBXGroup;
+			children = (
+				767C483D2BBFB26300AFA32F /* Shared */,
+				7632D53A2BBF233900CA9DFD /* Scissors-ios */,
+				7632D5532BBF236E00CA9DFD /* ssoe-ios */,
+				768FA4CF2BB7294D001DD2FB /* Frameworks */,
+				768FA4B92BB7290F001DD2FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		768FA4B92BB7290F001DD2FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7632D5392BBF233900CA9DFD /* Scissors-ios.app */,
+				7632D5512BBF236E00CA9DFD /* ssoe-ios.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		768FA4CF2BB7294D001DD2FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				768FA4D02BB7294D001DD2FB /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7632D5382BBF233900CA9DFD /* Scissors-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7632D54C2BBF233A00CA9DFD /* Build configuration list for PBXNativeTarget "Scissors-ios" */;
+			buildPhases = (
+				7632D5352BBF233900CA9DFD /* Sources */,
+				7632D5362BBF233900CA9DFD /* Frameworks */,
+				7632D5372BBF233900CA9DFD /* Resources */,
+				7632D5602BBF236E00CA9DFD /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7632D55B2BBF236E00CA9DFD /* PBXTargetDependency */,
+			);
+			name = "Scissors-ios";
+			productName = "Scissors-ios";
+			productReference = 7632D5392BBF233900CA9DFD /* Scissors-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7632D5502BBF236E00CA9DFD /* ssoe-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7632D55D2BBF236E00CA9DFD /* Build configuration list for PBXNativeTarget "ssoe-ios" */;
+			buildPhases = (
+				7632D54D2BBF236E00CA9DFD /* Sources */,
+				7632D54E2BBF236E00CA9DFD /* Frameworks */,
+				7632D54F2BBF236E00CA9DFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ssoe-ios";
+			productName = "ssoe-ios";
+			productReference = 7632D5512BBF236E00CA9DFD /* ssoe-ios.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		768FA4B02BB7290F001DD2FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					7632D5382BBF233900CA9DFD = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					7632D5502BBF236E00CA9DFD = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 768FA4B32BB7290F001DD2FB /* Build configuration list for PBXProject "Scissors" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 768FA4AF2BB7290F001DD2FB;
+			productRefGroup = 768FA4B92BB7290F001DD2FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7632D5382BBF233900CA9DFD /* Scissors-ios */,
+				7632D5502BBF236E00CA9DFD /* ssoe-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7632D5372BBF233900CA9DFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7632D5452BBF233A00CA9DFD /* Assets.xcassets in Resources */,
+				7632D5482BBF233A00CA9DFD /* Base in Resources */,
+				7632D5432BBF233900CA9DFD /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7632D54F2BBF236E00CA9DFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76E1952A2BD0BD49002442A5 /* AuthenticationViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7632D5352BBF233900CA9DFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7632D5402BBF233900CA9DFD /* ViewController.swift in Sources */,
+				7632D53C2BBF233900CA9DFD /* AppDelegate.swift in Sources */,
+				7632D53E2BBF233900CA9DFD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7632D54D2BBF236E00CA9DFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7632D5752BBF9CF100CA9DFD /* Cookies.swift in Sources */,
+				76E195252BD0BAD0002442A5 /* AuthenticationViewController.swift in Sources */,
+				767C483C2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7632D55B2BBF236E00CA9DFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7632D5502BBF236E00CA9DFD /* ssoe-ios */;
+			targetProxy = 7632D55A2BBF236E00CA9DFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7632D5412BBF233900CA9DFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7632D5422BBF233900CA9DFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7632D5462BBF233A00CA9DFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7632D5472BBF233A00CA9DFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		76E195282BD0BD49002442A5 /* AuthenticationViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76E195292BD0BD49002442A5 /* Base */,
+			);
+			name = AuthenticationViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7632D54A2BBF233A00CA9DFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Scissors-ios/Scissors-ios.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UXP6YEHSPW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Scissors-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.twocanoes.Scissors-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7632D54B2BBF233A00CA9DFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Scissors-ios/Scissors-ios.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UXP6YEHSPW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Scissors-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.twocanoes.Scissors-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7632D55E2BBF236E00CA9DFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UXP6YEHSPW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ssoe-ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ssoe-ios";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.twocanoes.Scissors-ios.ssoe-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7632D55F2BBF236E00CA9DFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UXP6YEHSPW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ssoe-ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ssoe-ios";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.twocanoes.Scissors-ios.ssoe-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		768FA4C52BB72910001DD2FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		768FA4C62BB72910001DD2FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7632D54C2BBF233A00CA9DFD /* Build configuration list for PBXNativeTarget "Scissors-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7632D54A2BBF233A00CA9DFD /* Debug */,
+				7632D54B2BBF233A00CA9DFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7632D55D2BBF236E00CA9DFD /* Build configuration list for PBXNativeTarget "ssoe-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7632D55E2BBF236E00CA9DFD /* Debug */,
+				7632D55F2BBF236E00CA9DFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		768FA4B32BB7290F001DD2FB /* Build configuration list for PBXProject "Scissors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768FA4C52BB72910001DD2FB /* Debug */,
+				768FA4C62BB72910001DD2FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 768FA4B02BB7290F001DD2FB /* Project object */;
+}
