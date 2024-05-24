@@ -2,21 +2,18 @@
 //  AuthenticationViewController.swift
 //  ssoe-ios
 //
-//  Created by Timothy Perfitt on 4/17/24.
+//  Created by Timothy Perfitt on 4/5/24.
 //
 
 import UIKit
-import WebKit
 import AuthenticationServices
+import WebKit
+
 class AuthenticationViewController: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
     var url:URL?
     var authorizationRequest: ASAuthorizationProviderExtensionAuthorizationRequest?
-
-    @IBAction func cancelButtonPressed(_ sender: Any) {
-        self.authorizationRequest?.doNotHandle()
-    }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -26,6 +23,7 @@ class AuthenticationViewController: UIViewController {
     override var nibName: String? {
         return "AuthenticationViewController"
     }
-
-
 }
+
+
+

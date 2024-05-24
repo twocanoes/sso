@@ -15,18 +15,22 @@ protocol WebViewSSOProtocol {
 
 protocol ExtensionAuthorizationRequestProtocol {
     func process(_ request:ASAuthorizationProviderExtensionAuthorizationRequest)
-
 }
-extension AuthenticationViewController:WebViewSSOProtocol, WKNavigationDelegate {
+
+extension AuthenticationViewController:WKNavigationDelegate, WebViewSSOProtocol {
+
+    @IBAction func cancelButtonPressed(_ sender: Any) {
+        self.authorizationRequest?.doNotHandle()
+    }
 
     func setupWebViewAndDelegate() {
         if let url = url {
             webView.navigationDelegate=self
             var request = URLRequest(url: url)
-            let cookies = cookiesFromKeychain()
+            let cookies = getCookies()
 
             if let cookies = cookies {
-                request.setValue(cookieHeaderString(from: cookies), forHTTPHeaderField: "Cookie")
+                request.setValue(combineCookies(cookies: cookies), forHTTPHeaderField: "Cookie")
             }
             request.httpShouldHandleCookies=true
             webView.load(request)
@@ -34,17 +38,19 @@ extension AuthenticationViewController:WebViewSSOProtocol, WKNavigationDelegate 
     }
 
     public func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
-        guard let url = url, let webViewURL = webView.url else {
-
+        guard let url = url,
+              let webViewURL = webView.url,
+        let callbackURLString = UserDefaults.standard.string(forKey: DefaultKeys.CallbackURLString.rawValue) else {
             return
         }
-        if let authorizationRequestHost = authorizationRequest?.url.host, webViewURL.host() != authorizationRequestHost {
+
+        if (webViewURL.absoluteString.starts(with: callbackURLString) == true) {
             webView.configuration.websiteDataStore.httpCookieStore.getAllCookies({ cookies in
                 let headers: [String:String] = [
                     "Location": webViewURL.absoluteString,
-                    "Set-Cookie": cookieHeaderString(from: cookies)
+                    "Set-Cookie": combineCookies(cookies: cookies)
                 ]
-                let _ = storeCookiesInKeychain(cookies)
+                storeCookies(cookies)
                 if let response = HTTPURLResponse.init(url: url, statusCode: 302, httpVersion: nil, headerFields: headers) {
                     self.authorizationRequest?.complete(httpResponse: response, httpBody: nil)
                 }
@@ -72,5 +78,3 @@ extension AuthenticationViewController: ASAuthorizationProviderExtensionAuthoriz
         process(request)
     }
 }
-
-

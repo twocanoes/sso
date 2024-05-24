@@ -6,6 +6,21 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		767C483E2BBFB2DD00AFA32F /* Build All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 767C483F2BBFB2DD00AFA32F /* Build configuration list for PBXAggregateTarget "Build All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				767C48452BBFB2EA00AFA32F /* PBXTargetDependency */,
+				767C48432BBFB2E700AFA32F /* PBXTargetDependency */,
+			);
+			name = "Build All";
+			productName = "Build All";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		7632D53C2BBF233900CA9DFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632D53B2BBF233900CA9DFD /* AppDelegate.swift */; };
 		7632D53E2BBF233900CA9DFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632D53D2BBF233900CA9DFD /* SceneDelegate.swift */; };
@@ -14,11 +29,31 @@
 		7632D5452BBF233A00CA9DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7632D5442BBF233A00CA9DFD /* Assets.xcassets */; };
 		7632D5482BBF233A00CA9DFD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7632D5472BBF233A00CA9DFD /* Base */; };
 		7632D5522BBF236E00CA9DFD /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768FA4D02BB7294D001DD2FB /* AuthenticationServices.framework */; };
+		7632D5582BBF236E00CA9DFD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7632D5572BBF236E00CA9DFD /* Base */; };
 		7632D55C2BBF236E00CA9DFD /* ssoe-ios.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7632D5512BBF236E00CA9DFD /* ssoe-ios.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7632D5742BBF9CF100CA9DFD /* Cookies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632D5732BBF9CF100CA9DFD /* Cookies.swift */; };
 		7632D5752BBF9CF100CA9DFD /* Cookies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632D5732BBF9CF100CA9DFD /* Cookies.swift */; };
+		765ABF382BFBDC4B0076E28A /* AuthenticationViewController+PSSO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765ABF362BFBDC2A0076E28A /* AuthenticationViewController+PSSO.swift */; };
+		765E77AF2BFCF9BA0031076E /* defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 765E77AE2BFCF9BA0031076E /* defaults.plist */; };
+		765E77B02BFCF9BA0031076E /* defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 765E77AE2BFCF9BA0031076E /* defaults.plist */; };
+		765E77B12BFCF9BA0031076E /* defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 765E77AE2BFCF9BA0031076E /* defaults.plist */; };
+		765E77B22BFCF9BA0031076E /* defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 765E77AE2BFCF9BA0031076E /* defaults.plist */; };
+		765E77B42BFCFA930031076E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765E77B32BFCFA930031076E /* Constants.swift */; };
+		765E77B52BFCFA930031076E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765E77B32BFCFA930031076E /* Constants.swift */; };
+		765E77B62BFCFA930031076E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765E77B32BFCFA930031076E /* Constants.swift */; };
+		765E77B72BFCFA930031076E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765E77B32BFCFA930031076E /* Constants.swift */; };
+		767882282BC0F4DB0076F1EF /* Scissors.docc in Sources */ = {isa = PBXBuildFile; fileRef = 768FA4E32BB7683C001DD2FB /* Scissors.docc */; };
+		767C48382BBF9E9C00AFA32F /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632D5542BBF236E00CA9DFD /* AuthenticationViewController.swift */; };
+		767C483B2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767C483A2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift */; };
 		767C483C2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767C483A2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift */; };
-		76E195252BD0BAD0002442A5 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E195232BD0BAD0002442A5 /* AuthenticationViewController.swift */; };
-		76E1952A2BD0BD49002442A5 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76E195282BD0BD49002442A5 /* AuthenticationViewController.xib */; };
+		768FA4BC2BB7290F001DD2FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768FA4BB2BB7290F001DD2FB /* AppDelegate.swift */; };
+		768FA4BE2BB7290F001DD2FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768FA4BD2BB7290F001DD2FB /* ViewController.swift */; };
+		768FA4C32BB72910001DD2FB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 768FA4C22BB72910001DD2FB /* Base */; };
+		768FA4D12BB7294D001DD2FB /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768FA4D02BB7294D001DD2FB /* AuthenticationServices.framework */; };
+		768FA4D42BB7294D001DD2FB /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768FA4D32BB7294D001DD2FB /* AuthenticationViewController.swift */; };
+		768FA4D72BB7294D001DD2FB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 768FA4D62BB7294D001DD2FB /* Base */; };
+		768FA4DC2BB7294D001DD2FB /* ssoe.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 768FA4CE2BB7294D001DD2FB /* ssoe.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		76B1AA712BDA044500EE658A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 768FA4BF2BB72910001DD2FB /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +63,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 7632D5502BBF236E00CA9DFD;
 			remoteInfo = "ssoe-ios";
+		};
+		767C48422BBFB2E700AFA32F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 768FA4B02BB7290F001DD2FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7632D5382BBF233900CA9DFD;
+			remoteInfo = "Scissors-ios";
+		};
+		767C48442BBFB2EA00AFA32F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 768FA4B02BB7290F001DD2FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 768FA4B72BB7290F001DD2FB;
+			remoteInfo = Scissors;
+		};
+		768FA4DA2BB7294D001DD2FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 768FA4B02BB7290F001DD2FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 768FA4CD2BB7294D001DD2FB;
+			remoteInfo = ssoe;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -39,6 +95,17 @@
 			dstSubfolderSpec = 13;
 			files = (
 				7632D55C2BBF236E00CA9DFD /* ssoe-ios.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768FA4E02BB7294D001DD2FB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				768FA4DC2BB7294D001DD2FB /* ssoe.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,13 +122,28 @@
 		7632D5472BBF233A00CA9DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7632D5492BBF233A00CA9DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7632D5512BBF236E00CA9DFD /* ssoe-ios.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ssoe-ios.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7632D5542BBF236E00CA9DFD /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		7632D5572BBF236E00CA9DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AuthenticationViewController.xib; sourceTree = "<group>"; };
 		7632D5592BBF236E00CA9DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7632D56F2BBF972800CA9DFD /* Scissors-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Scissors-ios.entitlements"; sourceTree = "<group>"; };
 		7632D5732BBF9CF100CA9DFD /* Cookies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cookies.swift; sourceTree = "<group>"; };
+		765ABF362BFBDC2A0076E28A /* AuthenticationViewController+PSSO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationViewController+PSSO.swift"; sourceTree = "<group>"; };
+		765E77AE2BFCF9BA0031076E /* defaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = defaults.plist; sourceTree = "<group>"; };
+		765E77B32BFCFA930031076E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		767C483A2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationViewController+Shared.swift"; sourceTree = "<group>"; };
+		7688F81D2BB7BCA400C0C369 /* ssoe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ssoe.entitlements; sourceTree = SOURCE_ROOT; };
+		768FA4B82BB7290F001DD2FB /* Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		768FA4BB2BB7290F001DD2FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		768FA4BD2BB7290F001DD2FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		768FA4BF2BB72910001DD2FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		768FA4C22BB72910001DD2FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		768FA4C42BB72910001DD2FB /* Scissors.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scissors.entitlements; sourceTree = "<group>"; };
+		768FA4CE2BB7294D001DD2FB /* ssoe.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ssoe.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		768FA4D02BB7294D001DD2FB /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
-		76E195232BD0BAD0002442A5 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
-		76E195292BD0BD49002442A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AuthenticationViewController.xib; sourceTree = "<group>"; };
+		768FA4D32BB7294D001DD2FB /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		768FA4D62BB7294D001DD2FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AuthenticationViewController.xib; sourceTree = "<group>"; };
+		768FA4D92BB7294D001DD2FB /* ssoe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ssoe.entitlements; sourceTree = "<group>"; };
+		768FA4E32BB7683C001DD2FB /* Scissors.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Scissors.docc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +159,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				7632D5522BBF236E00CA9DFD /* AuthenticationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768FA4B52BB7290F001DD2FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768FA4CB2BB7294D001DD2FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768FA4D12BB7294D001DD2FB /* AuthenticationServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +198,8 @@
 		7632D5532BBF236E00CA9DFD /* ssoe-ios */ = {
 			isa = PBXGroup;
 			children = (
-				76E195282BD0BD49002442A5 /* AuthenticationViewController.xib */,
-				76E195232BD0BAD0002442A5 /* AuthenticationViewController.swift */,
+				7632D5542BBF236E00CA9DFD /* AuthenticationViewController.swift */,
+				7632D5562BBF236E00CA9DFD /* AuthenticationViewController.xib */,
 				7632D5592BBF236E00CA9DFD /* Info.plist */,
 			);
 			path = "ssoe-ios";
@@ -112,7 +209,9 @@
 			isa = PBXGroup;
 			children = (
 				767C483A2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift */,
+				765E77B32BFCFA930031076E /* Constants.swift */,
 				7632D5732BBF9CF100CA9DFD /* Cookies.swift */,
+				765E77AE2BFCF9BA0031076E /* defaults.plist */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -120,7 +219,10 @@
 		768FA4AF2BB7290F001DD2FB = {
 			isa = PBXGroup;
 			children = (
+				768FA4E32BB7683C001DD2FB /* Scissors.docc */,
 				767C483D2BBFB26300AFA32F /* Shared */,
+				768FA4BA2BB7290F001DD2FB /* Scissors */,
+				768FA4D22BB7294D001DD2FB /* ssoe */,
 				7632D53A2BBF233900CA9DFD /* Scissors-ios */,
 				7632D5532BBF236E00CA9DFD /* ssoe-ios */,
 				768FA4CF2BB7294D001DD2FB /* Frameworks */,
@@ -131,10 +233,24 @@
 		768FA4B92BB7290F001DD2FB /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				768FA4B82BB7290F001DD2FB /* Scissors.app */,
+				768FA4CE2BB7294D001DD2FB /* ssoe.appex */,
 				7632D5392BBF233900CA9DFD /* Scissors-ios.app */,
 				7632D5512BBF236E00CA9DFD /* ssoe-ios.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		768FA4BA2BB7290F001DD2FB /* Scissors */ = {
+			isa = PBXGroup;
+			children = (
+				768FA4BB2BB7290F001DD2FB /* AppDelegate.swift */,
+				768FA4BD2BB7290F001DD2FB /* ViewController.swift */,
+				768FA4BF2BB72910001DD2FB /* Assets.xcassets */,
+				768FA4C12BB72910001DD2FB /* Main.storyboard */,
+				768FA4C42BB72910001DD2FB /* Scissors.entitlements */,
+			);
+			path = Scissors;
 			sourceTree = "<group>";
 		};
 		768FA4CF2BB7294D001DD2FB /* Frameworks */ = {
@@ -143,6 +259,19 @@
 				768FA4D02BB7294D001DD2FB /* AuthenticationServices.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		768FA4D22BB7294D001DD2FB /* ssoe */ = {
+			isa = PBXGroup;
+			children = (
+				7688F81D2BB7BCA400C0C369 /* ssoe.entitlements */,
+				765ABF362BFBDC2A0076E28A /* AuthenticationViewController+PSSO.swift */,
+				768FA4D32BB7294D001DD2FB /* AuthenticationViewController.swift */,
+				768FA4D52BB7294D001DD2FB /* AuthenticationViewController.xib */,
+				768FA4D92BB7294D001DD2FB /* ssoe.entitlements */,
+			);
+			name = ssoe;
+			path = Scissors/ssoe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +313,42 @@
 			productReference = 7632D5512BBF236E00CA9DFD /* ssoe-ios.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		768FA4B72BB7290F001DD2FB /* Scissors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 768FA4C72BB72910001DD2FB /* Build configuration list for PBXNativeTarget "Scissors" */;
+			buildPhases = (
+				768FA4B42BB7290F001DD2FB /* Sources */,
+				768FA4B52BB7290F001DD2FB /* Frameworks */,
+				768FA4B62BB7290F001DD2FB /* Resources */,
+				768FA4E02BB7294D001DD2FB /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				768FA4DB2BB7294D001DD2FB /* PBXTargetDependency */,
+			);
+			name = Scissors;
+			productName = Scissors;
+			productReference = 768FA4B82BB7290F001DD2FB /* Scissors.app */;
+			productType = "com.apple.product-type.application";
+		};
+		768FA4CD2BB7294D001DD2FB /* ssoe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 768FA4DD2BB7294D001DD2FB /* Build configuration list for PBXNativeTarget "ssoe" */;
+			buildPhases = (
+				768FA4CA2BB7294D001DD2FB /* Sources */,
+				768FA4CB2BB7294D001DD2FB /* Frameworks */,
+				768FA4CC2BB7294D001DD2FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ssoe;
+			productName = ssoe;
+			productReference = 768FA4CE2BB7294D001DD2FB /* ssoe.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -192,12 +357,21 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1530;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					7632D5382BBF233900CA9DFD = {
 						CreatedOnToolsVersion = 15.3;
 					};
 					7632D5502BBF236E00CA9DFD = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					767C483E2BBFB2DD00AFA32F = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					768FA4B72BB7290F001DD2FB = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					768FA4CD2BB7294D001DD2FB = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
@@ -215,8 +389,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				768FA4B72BB7290F001DD2FB /* Scissors */,
+				768FA4CD2BB7294D001DD2FB /* ssoe */,
 				7632D5382BBF233900CA9DFD /* Scissors-ios */,
 				7632D5502BBF236E00CA9DFD /* ssoe-ios */,
+				767C483E2BBFB2DD00AFA32F /* Build All */,
 			);
 		};
 /* End PBXProject section */
@@ -226,6 +403,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765E77B12BFCF9BA0031076E /* defaults.plist in Resources */,
 				7632D5452BBF233A00CA9DFD /* Assets.xcassets in Resources */,
 				7632D5482BBF233A00CA9DFD /* Base in Resources */,
 				7632D5432BBF233900CA9DFD /* Base in Resources */,
@@ -236,7 +414,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76E1952A2BD0BD49002442A5 /* AuthenticationViewController.xib in Resources */,
+				765E77B22BFCF9BA0031076E /* defaults.plist in Resources */,
+				7632D5582BBF236E00CA9DFD /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768FA4B62BB7290F001DD2FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B1AA712BDA044500EE658A /* Assets.xcassets in Resources */,
+				765E77AF2BFCF9BA0031076E /* defaults.plist in Resources */,
+				768FA4C32BB72910001DD2FB /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768FA4CC2BB7294D001DD2FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				765E77B02BFCF9BA0031076E /* defaults.plist in Resources */,
+				768FA4D72BB7294D001DD2FB /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +448,7 @@
 				7632D5402BBF233900CA9DFD /* ViewController.swift in Sources */,
 				7632D53C2BBF233900CA9DFD /* AppDelegate.swift in Sources */,
 				7632D53E2BBF233900CA9DFD /* SceneDelegate.swift in Sources */,
+				765E77B62BFCFA930031076E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,9 +456,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				767C48382BBF9E9C00AFA32F /* AuthenticationViewController.swift in Sources */,
 				7632D5752BBF9CF100CA9DFD /* Cookies.swift in Sources */,
-				76E195252BD0BAD0002442A5 /* AuthenticationViewController.swift in Sources */,
 				767C483C2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift in Sources */,
+				765E77B72BFCFA930031076E /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768FA4B42BB7290F001DD2FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767882282BC0F4DB0076F1EF /* Scissors.docc in Sources */,
+				768FA4BE2BB7290F001DD2FB /* ViewController.swift in Sources */,
+				768FA4BC2BB7290F001DD2FB /* AppDelegate.swift in Sources */,
+				765E77B42BFCFA930031076E /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768FA4CA2BB7294D001DD2FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				765E77B52BFCFA930031076E /* Constants.swift in Sources */,
+				768FA4D42BB7294D001DD2FB /* AuthenticationViewController.swift in Sources */,
+				765ABF382BFBDC4B0076E28A /* AuthenticationViewController+PSSO.swift in Sources */,
+				7632D5742BBF9CF100CA9DFD /* Cookies.swift in Sources */,
+				767C483B2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +493,21 @@
 			isa = PBXTargetDependency;
 			target = 7632D5502BBF236E00CA9DFD /* ssoe-ios */;
 			targetProxy = 7632D55A2BBF236E00CA9DFD /* PBXContainerItemProxy */;
+		};
+		767C48432BBFB2E700AFA32F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7632D5382BBF233900CA9DFD /* Scissors-ios */;
+			targetProxy = 767C48422BBFB2E700AFA32F /* PBXContainerItemProxy */;
+		};
+		767C48452BBFB2EA00AFA32F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 768FA4B72BB7290F001DD2FB /* Scissors */;
+			targetProxy = 767C48442BBFB2EA00AFA32F /* PBXContainerItemProxy */;
+		};
+		768FA4DB2BB7294D001DD2FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 768FA4CD2BB7294D001DD2FB /* ssoe */;
+			targetProxy = 768FA4DA2BB7294D001DD2FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -290,10 +528,26 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		76E195282BD0BD49002442A5 /* AuthenticationViewController.xib */ = {
+		7632D5562BBF236E00CA9DFD /* AuthenticationViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				76E195292BD0BD49002442A5 /* Base */,
+				7632D5572BBF236E00CA9DFD /* Base */,
+			);
+			name = AuthenticationViewController.xib;
+			sourceTree = "<group>";
+		};
+		768FA4C12BB72910001DD2FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				768FA4C22BB72910001DD2FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		768FA4D52BB7294D001DD2FB /* AuthenticationViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				768FA4D62BB7294D001DD2FB /* Base */,
 			);
 			name = AuthenticationViewController.xib;
 			sourceTree = "<group>";
@@ -309,7 +563,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Scissors-ios/Scissors-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1024;
 				DEVELOPMENT_TEAM = UXP6YEHSPW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Scissors-ios/Info.plist";
@@ -323,7 +577,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twocanoes.Scissors-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -341,7 +595,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Scissors-ios/Scissors-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1024;
 				DEVELOPMENT_TEAM = UXP6YEHSPW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Scissors-ios/Info.plist";
@@ -355,7 +609,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twocanoes.Scissors-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -370,7 +624,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1024;
 				DEVELOPMENT_TEAM = UXP6YEHSPW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ssoe-ios/Info.plist";
@@ -382,7 +636,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twocanoes.Scissors-ios.ssoe-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -397,7 +651,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1024;
 				DEVELOPMENT_TEAM = UXP6YEHSPW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ssoe-ios/Info.plist";
@@ -409,7 +663,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twocanoes.Scissors-ios.ssoe-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -418,6 +672,26 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		767C48402BBFB2DD00AFA32F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = UXP6YEHSPW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		767C48412BBFB2DD00AFA32F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = UXP6YEHSPW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -455,6 +729,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -518,6 +793,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -536,6 +812,124 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		768FA4C82BB72910001DD2FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Scissors/Scissors.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1024;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = UXP6YEHSPW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twocanoes.Scissors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		768FA4C92BB72910001DD2FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Scissors/Scissors.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1024;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = UXP6YEHSPW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twocanoes.Scissors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		768FA4DE2BB7294D001DD2FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ssoe.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1024;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = UXP6YEHSPW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Scissors/ssoe/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ssoe;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twocanoes.Scissors.ssoe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		768FA4DF2BB7294D001DD2FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ssoe.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1024;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = UXP6YEHSPW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Scissors/ssoe/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ssoe;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twocanoes.Scissors.ssoe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -560,11 +954,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		767C483F2BBFB2DD00AFA32F /* Build configuration list for PBXAggregateTarget "Build All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767C48402BBFB2DD00AFA32F /* Debug */,
+				767C48412BBFB2DD00AFA32F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		768FA4B32BB7290F001DD2FB /* Build configuration list for PBXProject "Scissors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				768FA4C52BB72910001DD2FB /* Debug */,
 				768FA4C62BB72910001DD2FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		768FA4C72BB72910001DD2FB /* Build configuration list for PBXNativeTarget "Scissors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768FA4C82BB72910001DD2FB /* Debug */,
+				768FA4C92BB72910001DD2FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		768FA4DD2BB7294D001DD2FB /* Build configuration list for PBXNativeTarget "ssoe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768FA4DE2BB7294D001DD2FB /* Debug */,
+				768FA4DF2BB7294D001DD2FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
