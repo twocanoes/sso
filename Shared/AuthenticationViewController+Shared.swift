@@ -44,7 +44,7 @@ extension AuthenticationViewController:WKNavigationDelegate, WebViewSSOProtocol 
             return
         }
 
-        if (webViewURL.absoluteString.starts(with: callbackURLString) == true) {
+        if (webViewURL.absoluteString.starts(with: callbackURLString) == false) {
             webView.configuration.websiteDataStore.httpCookieStore.getAllCookies({ cookies in
                 let headers: [String:String] = [
                     "Location": webViewURL.absoluteString,
@@ -59,22 +59,23 @@ extension AuthenticationViewController:WKNavigationDelegate, WebViewSSOProtocol 
 
     }
 }
-extension AuthenticationViewController:ExtensionAuthorizationRequestProtocol {
-
-    func process(_ request:ASAuthorizationProviderExtensionAuthorizationRequest){
-        url=request.url
-        request.presentAuthorizationViewController(completion: { (success, error) in
-            if error != nil {
-                request.complete(error: error!)
-            }
-        })
-    }
-}
+//extension AuthenticationViewController:ExtensionAuthorizationRequestProtocol {
+//
+//    func process(_ request:ASAuthorizationProviderExtensionAuthorizationRequest){
+//        url=request.url
+//        request.presentAuthorizationViewController(completion: { (success, error) in
+//            if error != nil {
+//                request.complete(error: error!)
+//            }
+//        })
+//    }
+//}
 extension AuthenticationViewController: ASAuthorizationProviderExtensionAuthorizationRequestHandler {
 
     public func beginAuthorization(with request: ASAuthorizationProviderExtensionAuthorizationRequest) {
         self.authorizationRequest = request
 
-        process(request)
+        request.doNotHandle()
+//        process(request)
     }
 }

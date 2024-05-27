@@ -42,7 +42,6 @@
 		765E77B52BFCFA930031076E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765E77B32BFCFA930031076E /* Constants.swift */; };
 		765E77B62BFCFA930031076E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765E77B32BFCFA930031076E /* Constants.swift */; };
 		765E77B72BFCFA930031076E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765E77B32BFCFA930031076E /* Constants.swift */; };
-		767882282BC0F4DB0076F1EF /* Scissors.docc in Sources */ = {isa = PBXBuildFile; fileRef = 768FA4E32BB7683C001DD2FB /* Scissors.docc */; };
 		767C48382BBF9E9C00AFA32F /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632D5542BBF236E00CA9DFD /* AuthenticationViewController.swift */; };
 		767C483B2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767C483A2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift */; };
 		767C483C2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767C483A2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift */; };
@@ -143,7 +142,6 @@
 		768FA4D32BB7294D001DD2FB /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		768FA4D62BB7294D001DD2FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AuthenticationViewController.xib; sourceTree = "<group>"; };
 		768FA4D92BB7294D001DD2FB /* ssoe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ssoe.entitlements; sourceTree = "<group>"; };
-		768FA4E32BB7683C001DD2FB /* Scissors.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Scissors.docc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,7 +217,6 @@
 		768FA4AF2BB7290F001DD2FB = {
 			isa = PBXGroup;
 			children = (
-				768FA4E32BB7683C001DD2FB /* Scissors.docc */,
 				767C483D2BBFB26300AFA32F /* Shared */,
 				768FA4BA2BB7290F001DD2FB /* Scissors */,
 				768FA4D22BB7294D001DD2FB /* ssoe */,
@@ -467,7 +464,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				767882282BC0F4DB0076F1EF /* Scissors.docc in Sources */,
 				768FA4BE2BB7290F001DD2FB /* ViewController.swift in Sources */,
 				768FA4BC2BB7290F001DD2FB /* AppDelegate.swift in Sources */,
 				765E77B42BFCFA930031076E /* Constants.swift in Sources */,

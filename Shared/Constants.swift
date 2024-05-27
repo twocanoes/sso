@@ -7,7 +7,10 @@
 
 
 enum DefaultKeys:String{
-    case PSSOUrlPathString = "PSSOUrlPathString"
+    case BaseURL = "BaseURL"
+    case ClientID = "ClientID"
+    case Audience = "Audience"
+    case Issuer = "Issuer"
     case TokenEndpoint = "TokenEndpoint"
     case JwksEndpoint = "JwksEndpoint"
     case NonceEndpoint = "NonceEndpoint"

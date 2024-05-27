@@ -2,8 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>PSSOUrlPathString</key>
-	<string>https://idp.twocanoes.com/psso/</string>
+	<key>BaseURL</key>
+	<string>https://idp.twocanoes.com/</string>
+	<key>Issuer</key>
+	<string>idp.twocanoes.com</string>
+	<key>Audience</key>
+	<string>psso</string>
+	<key>ClientID</key>
+	<string>psso</string>
 	<key>TokenEndpoint</key>
 	<string>token</string>
 	<key>JwksEndpoint</key>

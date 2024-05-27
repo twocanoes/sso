@@ -126,15 +126,24 @@ extension AuthenticationViewController: ASAuthorizationProviderExtensionRegistra
 
     func setLoginConfig(loginManager: ASAuthorizationProviderExtensionLoginManager) async {
 
-        let urlPath = UserDefaults().string(forKey:DefaultKeys.PSSOUrlPathString.rawValue ) ?? ""
+        let baseURL = UserDefaults().string(forKey:DefaultKeys.BaseURL.rawValue ) ?? ""
+
+        let issuer = UserDefaults().string(forKey:DefaultKeys.Issuer.rawValue ) ?? baseURL
+        let clientID = UserDefaults().string(forKey:DefaultKeys.ClientID.rawValue ) ?? baseURL
+
+        let audience = UserDefaults().string(forKey:DefaultKeys.Audience.rawValue ) ?? baseURL
+
         let tokenEndpoint = UserDefaults().string(forKey:DefaultKeys.TokenEndpoint.rawValue ) ?? "tokenEndpoint"
         let jwksEndpoint = UserDefaults().string(forKey:DefaultKeys.JwksEndpoint.rawValue ) ?? ".well-known/jwks.json"
         let nonceEndpont = UserDefaults().string(forKey:DefaultKeys.NonceEndpoint.rawValue ) ?? "nonce"
-        if let tokenEndpoint = URL(string: urlPath + tokenEndpoint),
-           let jwksEndpoint = URL(string: urlPath + jwksEndpoint),
-           let nonceEndpoint = URL(string: urlPath + nonceEndpont) {
+        if let tokenEndpoint = URL(string: baseURL + tokenEndpoint),
+           let jwksEndpoint = URL(string: baseURL + jwksEndpoint),
+           let nonceEndpoint = URL(string: baseURL + nonceEndpont) {
             do {
-                let config = ASAuthorizationProviderExtensionLoginConfiguration(clientID: "psso", issuer: urlPath, tokenEndpointURL: tokenEndpoint, jwksEndpointURL: jwksEndpoint, audience: "idp.twocanoes.com")
+                
+                NSLog("LoginSSOE: Registering. clientID: \(clientID), issuer:\(issuer), tokenEndpoint:\(tokenEndpoint), jwsEndpointURL: \(jwksEndpoint) audience:\(audience) nonceEndpoint: \(nonceEndpoint) keyEndpointURL:\(tokenEndpoint)")
+
+                let config = ASAuthorizationProviderExtensionLoginConfiguration(clientID:clientID , issuer: issuer, tokenEndpointURL: tokenEndpoint, jwksEndpointURL: jwksEndpoint, audience: audience)
                 config.nonceEndpointURL = nonceEndpoint
                     config.keyEndpointURL = tokenEndpoint
 
@@ -171,7 +180,7 @@ extension AuthenticationViewController: ASAuthorizationProviderExtensionRegistra
 
         let encoder = JSONEncoder()
 
-        if  let urlPath = UserDefaults().string(forKey:DefaultKeys.PSSOUrlPathString.rawValue ) ,
+        if  let urlPath = UserDefaults().string(forKey:DefaultKeys.BaseURL.rawValue ) ,
                 let registrationEndpoint = UserDefaults().string(forKey:DefaultKeys.RegistrationEndpoint.rawValue ),
             let registrationURL = URL(string: urlPath + registrationEndpoint),
             let data = try? encoder.encode(body){
