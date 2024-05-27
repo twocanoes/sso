@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>BaseURL</key>
-	<string>https://idp.twocanoes.com/</string>
+	<string>https://idp.example.com/</string>
 	<key>Issuer</key>
-	<string>idp.twocanoes.com</string>
+	<string>idp.example.com</string>
 	<key>Audience</key>
 	<string>psso</string>
 	<key>ClientID</key>
@@ -19,7 +19,7 @@
 	<key>RegistrationEndpoint</key>
 	<string>register</string>
 	<key>CallbackURLString</key>
-	<string>https://idp.twocanoes.com</string>
+	<string>https://idp.example.com</string>
 	<key>Username</key>
 	<string>jappleseed@twocanoes.com</string>
 </dict>
