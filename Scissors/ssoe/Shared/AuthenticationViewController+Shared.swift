@@ -20,7 +20,38 @@ protocol ExtensionAuthorizationRequestProtocol {
 extension AuthenticationViewController:WKNavigationDelegate, WebViewSSOProtocol {
 
     @IBAction func cancelButtonPressed(_ sender: Any) {
-        self.authorizationRequest?.doNotHandle()
+
+//        let url = URL(string: "scissors://abc")!
+//
+//        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+//            guard let data = data else { return }
+//            print(String(data: data, encoding: .utf8)!)
+//        }
+//
+//        task.resume()
+        let headers: [String:String] = [
+            "Location": "https://idp.twocanoes.com/camera"
+            ]
+        if let response = HTTPURLResponse.init(url: url!, statusCode: 302, httpVersion: nil, headerFields: headers) {
+
+
+            self.authorizationRequest?.complete(httpResponse: response, httpBody: nil)
+
+        }
+//        self.authorizationRequest?.doNotHandle()
+
+//        UIApplication().open(URL(string: "scissors://")!)
+//        let content = UNMutableNotificationContent()
+//
+//        content.title="Open Camera"
+//        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+//
+//        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+//
+//        // add our notification request
+//        UNUserNotificationCenter.current().add(request)
+
+
     }
 
     func setupWebViewAndDelegate() {
@@ -59,23 +90,23 @@ extension AuthenticationViewController:WKNavigationDelegate, WebViewSSOProtocol 
 
     }
 }
-//extension AuthenticationViewController:ExtensionAuthorizationRequestProtocol {
-//
-//    func process(_ request:ASAuthorizationProviderExtensionAuthorizationRequest){
-//        url=request.url
-//        request.presentAuthorizationViewController(completion: { (success, error) in
-//            if error != nil {
-//                request.complete(error: error!)
-//            }
-//        })
-//    }
-//}
+extension AuthenticationViewController:ExtensionAuthorizationRequestProtocol {
+
+    func process(_ request:ASAuthorizationProviderExtensionAuthorizationRequest){
+        url=request.url
+        request.presentAuthorizationViewController(completion: { (success, error) in
+            if error != nil {
+                request.complete(error: error!)
+            }
+        })
+    }
+}
 extension AuthenticationViewController: ASAuthorizationProviderExtensionAuthorizationRequestHandler {
 
     public func beginAuthorization(with request: ASAuthorizationProviderExtensionAuthorizationRequest) {
         self.authorizationRequest = request
 
-        request.doNotHandle()
-//        process(request)
+//        request.doNotHandle()
+        process(request)
     }
 }

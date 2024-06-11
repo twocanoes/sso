@@ -140,7 +140,7 @@
 		768FA4CE2BB7294D001DD2FB /* ssoe.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ssoe.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		768FA4D02BB7294D001DD2FB /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		768FA4D32BB7294D001DD2FB /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
-		768FA4D62BB7294D001DD2FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AuthenticationViewController.xib; sourceTree = "<group>"; };
+		768FA4D62BB7294D001DD2FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AuthenticationViewController2.xib; sourceTree = "<group>"; };
 		768FA4D92BB7294D001DD2FB /* ssoe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ssoe.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,7 +217,6 @@
 		768FA4AF2BB7290F001DD2FB = {
 			isa = PBXGroup;
 			children = (
-				767C483D2BBFB26300AFA32F /* Shared */,
 				768FA4BA2BB7290F001DD2FB /* Scissors */,
 				768FA4D22BB7294D001DD2FB /* ssoe */,
 				7632D53A2BBF233900CA9DFD /* Scissors-ios */,
@@ -263,8 +262,9 @@
 			children = (
 				7688F81D2BB7BCA400C0C369 /* ssoe.entitlements */,
 				765ABF362BFBDC2A0076E28A /* AuthenticationViewController+PSSO.swift */,
+				767C483D2BBFB26300AFA32F /* Shared */,
 				768FA4D32BB7294D001DD2FB /* AuthenticationViewController.swift */,
-				768FA4D52BB7294D001DD2FB /* AuthenticationViewController.xib */,
+				768FA4D52BB7294D001DD2FB /* AuthenticationViewController2.xib */,
 				768FA4D92BB7294D001DD2FB /* ssoe.entitlements */,
 			);
 			name = ssoe;
@@ -540,12 +540,12 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		768FA4D52BB7294D001DD2FB /* AuthenticationViewController.xib */ = {
+		768FA4D52BB7294D001DD2FB /* AuthenticationViewController2.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				768FA4D62BB7294D001DD2FB /* Base */,
 			);
-			name = AuthenticationViewController.xib;
+			name = AuthenticationViewController2.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -563,6 +563,7 @@
 				DEVELOPMENT_TEAM = UXP6YEHSPW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Scissors-ios/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera for Auth";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -595,6 +596,7 @@
 				DEVELOPMENT_TEAM = UXP6YEHSPW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Scissors-ios/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera for Auth";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

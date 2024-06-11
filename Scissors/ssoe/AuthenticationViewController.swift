@@ -9,7 +9,7 @@ import Cocoa
 import AuthenticationServices
 import WebKit
 import CryptoKit
-class AuthenticationViewController: NSViewController {
+class AuthenticationViewController2: NSViewController {
 
     var url:URL?
     var authorizationRequest: ASAuthorizationProviderExtensionAuthorizationRequest?

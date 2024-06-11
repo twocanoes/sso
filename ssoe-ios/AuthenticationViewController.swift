@@ -15,6 +15,9 @@ class AuthenticationViewController: UIViewController {
     var url:URL?
     var authorizationRequest: ASAuthorizationProviderExtensionAuthorizationRequest?
 
+    override func viewDidLoad() {
+
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         setupWebViewAndDelegate()
