@@ -21,23 +21,6 @@ extension AuthenticationViewController:WKNavigationDelegate, WebViewSSOProtocol 
 
     @IBAction func cancelButtonPressed(_ sender: Any) {
 
-//        let url = URL(string: "scissors://abc")!
-//
-//        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-//            guard let data = data else { return }
-//            print(String(data: data, encoding: .utf8)!)
-//        }
-//
-//        task.resume()
-        let headers: [String:String] = [
-            "Location": "https://idp.twocanoes.com/camera"
-            ]
-        if let response = HTTPURLResponse.init(url: url!, statusCode: 302, httpVersion: nil, headerFields: headers) {
-
-
-            self.authorizationRequest?.complete(httpResponse: response, httpBody: nil)
-
-        }
 //        self.authorizationRequest?.doNotHandle()
 
 //        UIApplication().open(URL(string: "scissors://")!)
