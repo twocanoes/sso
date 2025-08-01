@@ -12,12 +12,12 @@
 		<key>Scissors-ios.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Scissors.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<key>ssoe-ios.xcscheme_^#shared#^_</key>
 		<dict>
@@ -33,6 +33,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>7632D5502BBF236E00CA9DFD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>768FA4B72BB7290F001DD2FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>768FA4CD2BB7294D001DD2FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

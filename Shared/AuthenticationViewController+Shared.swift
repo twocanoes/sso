@@ -73,9 +73,44 @@ extension AuthenticationViewController:WKNavigationDelegate, WebViewSSOProtocol 
 extension AuthenticationViewController: ASAuthorizationProviderExtensionAuthorizationRequestHandler {
 
     public func beginAuthorization(with request: ASAuthorizationProviderExtensionAuthorizationRequest) {
-        self.authorizationRequest = request
 
-        request.doNotHandle()
-//        process(request)
-    }
+
+           let logger=Logger(subsystem: "LoginSSOE", category: "LoginSSOE")
+           logger.log("starting")
+
+
+           Task{
+               var newRequest = URLRequest(url: URL(string:"https://twocanoes.com")!)
+               newRequest.allHTTPHeaderFields = request.httpHeaders
+               newRequest.addValue("access", forHTTPHeaderField: "X-SSOE-Auth")
+
+               logger.log("LoginSSOE: Sending request")
+
+               do {
+                   newRequest.cachePolicy = .reloadIgnoringCacheData
+                   let (data, response) = try await URLSession.shared.data(for: newRequest)
+                   logger.log("LoginSSOE: Got HTTPURLResponse")
+
+
+                   if let response = response as? HTTPURLResponse {
+
+                       var headers = response.allHeaderFields as! [String: String]
+                       headers["tim"]="Perfitt"
+                       let response2 = HTTPURLResponse(url: URL(string:"https://idp.twocanoes.com/authenticate")!, statusCode: response.statusCode, httpVersion: "2.0", headerFields: headers)
+                       logger.log("LoginSSOE: Got HTTPURLResponse")
+                       request.complete(httpResponse: response2!, httpBody: data)
+                       return
+                   } else {
+                       logger.log("LoginSSOE: No response")
+                       request.doNotHandle()
+                   }
+               }
+               catch {
+                   logger.log("\(error, privacy: .public)")
+                   request.cancel()
+               }
+
+           }
+
+       }
 }

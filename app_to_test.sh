@@ -3,16 +3,24 @@
 
 set -e
 set -x 
+SRC_PATH="../../"
 BUILD_DIR="/tmp/ssoeexample"
 DERIVED_DATA_DIR="${BUILD_DIR}/DerivedData"
 if [ "${1}" ]; then
 REMOTE_MAC=$1
 else 
-REMOTE_MAC="dev.local"
+REMOTE_MAC="test.local"
 fi
 
 agvtool bump
-xcodebuild  -scheme "Scissors"  -configuration "Release" -derivedDataPath  "${DERIVED_DATA_DIR}"
+#xcodebuild  -scheme "Scissors"  -configuration "Release" -derivedDataPath  "${DERIVED_DATA_DIR}"
+#xcodebuild -exportArchive -archivePath "${BUILD_DIR}/Scissors.xcarchive"  -exportOptionsPlist ".//build_resources/exportOptions.plist" -exportPath "${BUILD_DIR}"
+pushd ./build_resources/buildscripts/
+
+xcodebuild archive -project "${SRC_PATH}/Scissors.xcodeproj" -scheme "Scissors" -archivePath  "${BUILD_DIR}/Scissors.xcarchive"
+
+
+xcodebuild -exportArchive -archivePath "${BUILD_DIR}/Scissors.xcarchive"  -exportOptionsPlist "${SRC_PATH}/build_resources/exportOptions.plist" -exportPath "${BUILD_DIR}" 
 
 ssh  root@"${REMOTE_MAC}" 'bash -c "if [ -e "/Applications/Scissors.app" ] ; then echo removing; rm -rf "/Applications/Scissors.app"; fi"'
 
@@ -20,7 +28,7 @@ if [ -e /tmp/ssoeexample/ssoeexample.zip ]; then
 	rm /tmp/ssoeexample/ssoeexample.zip
 fi
 
-pushd /tmp/ssoeexample/DerivedData/Build/Products/Release/
+pushd /tmp/ssoeexample/
 zip -r /tmp/ssoeexample/ssoeexample.zip "Scissors.app"
 popd 
 

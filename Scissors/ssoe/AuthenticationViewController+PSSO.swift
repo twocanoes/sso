@@ -106,10 +106,16 @@ extension AuthenticationViewController: ASAuthorizationProviderExtensionRegistra
         }
 
         do {
+            NSLog("LoginSSOE: defaultsUsername")
+
             let defaultsUsername = UserDefaults.standard.string(forKey: DefaultKeys.Username.rawValue) ?? ""
             let user = userName ?? defaultsUsername
 
+            NSLog("LoginSSOE: config")
+
             let config = ASAuthorizationProviderExtensionUserLoginConfiguration(loginUserName: user )
+            NSLog("LoginSSOE: saveUserLoginConfiguration")
+
             try loginManager.saveUserLoginConfiguration(config)
         } catch {
             NSLog("LoginSSOE: error saving user login config: \(error)")
@@ -160,8 +166,8 @@ extension AuthenticationViewController: ASAuthorizationProviderExtensionRegistra
         NSLog("LoginSSOE: checking grant types")
 
         //tell PSSO that our service supports password grant type
-        let types:ASAuthorizationProviderExtensionSupportedGrantTypes = .password
-//        types.insert(.jwtBearer)  //smart card,
+        var types:ASAuthorizationProviderExtensionSupportedGrantTypes = .password
+        types.insert(.jwtBearer)  //smart card, secure enclave, encrypted password
 //        types.insert(.saml1_1)  // WSTrust
 //        types.insert(.saml2_0) // WSTrust (dynamic?)
 

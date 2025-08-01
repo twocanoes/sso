@@ -42,6 +42,10 @@
 		765E77B52BFCFA930031076E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765E77B32BFCFA930031076E /* Constants.swift */; };
 		765E77B62BFCFA930031076E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765E77B32BFCFA930031076E /* Constants.swift */; };
 		765E77B72BFCFA930031076E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765E77B32BFCFA930031076E /* Constants.swift */; };
+		7668EE0C2E38519C008E2783 /* Data+HexEncodedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7668EE0B2E38519C008E2783 /* Data+HexEncodedString.swift */; };
+		7668EE0D2E38519C008E2783 /* Data+HexEncodedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7668EE0B2E38519C008E2783 /* Data+HexEncodedString.swift */; };
+		7668EE0E2E38519C008E2783 /* Data+HexEncodedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7668EE0B2E38519C008E2783 /* Data+HexEncodedString.swift */; };
+		7668EE0F2E38519C008E2783 /* Data+HexEncodedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7668EE0B2E38519C008E2783 /* Data+HexEncodedString.swift */; };
 		767C48382BBF9E9C00AFA32F /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632D5542BBF236E00CA9DFD /* AuthenticationViewController.swift */; };
 		767C483B2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767C483A2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift */; };
 		767C483C2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767C483A2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift */; };
@@ -129,6 +133,7 @@
 		765ABF362BFBDC2A0076E28A /* AuthenticationViewController+PSSO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationViewController+PSSO.swift"; sourceTree = "<group>"; };
 		765E77AE2BFCF9BA0031076E /* defaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = defaults.plist; sourceTree = "<group>"; };
 		765E77B32BFCFA930031076E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7668EE0B2E38519C008E2783 /* Data+HexEncodedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+HexEncodedString.swift"; sourceTree = "<group>"; };
 		767C483A2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationViewController+Shared.swift"; sourceTree = "<group>"; };
 		7688F81D2BB7BCA400C0C369 /* ssoe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ssoe.entitlements; sourceTree = SOURCE_ROOT; };
 		768FA4B82BB7290F001DD2FB /* Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +211,7 @@
 		767C483D2BBFB26300AFA32F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				7668EE0B2E38519C008E2783 /* Data+HexEncodedString.swift */,
 				767C483A2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift */,
 				765E77B32BFCFA930031076E /* Constants.swift */,
 				7632D5732BBF9CF100CA9DFD /* Cookies.swift */,
@@ -445,6 +451,7 @@
 				7632D5402BBF233900CA9DFD /* ViewController.swift in Sources */,
 				7632D53C2BBF233900CA9DFD /* AppDelegate.swift in Sources */,
 				7632D53E2BBF233900CA9DFD /* SceneDelegate.swift in Sources */,
+				7668EE0D2E38519C008E2783 /* Data+HexEncodedString.swift in Sources */,
 				765E77B62BFCFA930031076E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +463,7 @@
 				767C48382BBF9E9C00AFA32F /* AuthenticationViewController.swift in Sources */,
 				7632D5752BBF9CF100CA9DFD /* Cookies.swift in Sources */,
 				767C483C2BBFA53D00AFA32F /* AuthenticationViewController+Shared.swift in Sources */,
+				7668EE0C2E38519C008E2783 /* Data+HexEncodedString.swift in Sources */,
 				765E77B72BFCFA930031076E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				768FA4BE2BB7290F001DD2FB /* ViewController.swift in Sources */,
+				7668EE0E2E38519C008E2783 /* Data+HexEncodedString.swift in Sources */,
 				768FA4BC2BB7290F001DD2FB /* AppDelegate.swift in Sources */,
 				765E77B42BFCFA930031076E /* Constants.swift in Sources */,
 			);
@@ -475,6 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				765E77B52BFCFA930031076E /* Constants.swift in Sources */,
+				7668EE0F2E38519C008E2783 /* Data+HexEncodedString.swift in Sources */,
 				768FA4D42BB7294D001DD2FB /* AuthenticationViewController.swift in Sources */,
 				765ABF382BFBDC4B0076E28A /* AuthenticationViewController+PSSO.swift in Sources */,
 				7632D5742BBF9CF100CA9DFD /* Cookies.swift in Sources */,
@@ -559,7 +569,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Scissors-ios/Scissors-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1024;
+				CURRENT_PROJECT_VERSION = 1120;
 				DEVELOPMENT_TEAM = UXP6YEHSPW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Scissors-ios/Info.plist";
@@ -591,7 +601,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Scissors-ios/Scissors-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1024;
+				CURRENT_PROJECT_VERSION = 1120;
 				DEVELOPMENT_TEAM = UXP6YEHSPW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Scissors-ios/Info.plist";
@@ -620,7 +630,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1024;
+				CURRENT_PROJECT_VERSION = 1120;
 				DEVELOPMENT_TEAM = UXP6YEHSPW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ssoe-ios/Info.plist";
@@ -647,7 +657,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1024;
+				CURRENT_PROJECT_VERSION = 1120;
 				DEVELOPMENT_TEAM = UXP6YEHSPW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ssoe-ios/Info.plist";
@@ -821,7 +831,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1024;
+				CURRENT_PROJECT_VERSION = 1120;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = UXP6YEHSPW;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -852,7 +862,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1024;
+				CURRENT_PROJECT_VERSION = 1120;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = UXP6YEHSPW;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -879,7 +889,7 @@
 				CODE_SIGN_ENTITLEMENTS = ssoe.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1024;
+				CURRENT_PROJECT_VERSION = 1120;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = UXP6YEHSPW;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -907,7 +917,7 @@
 				CODE_SIGN_ENTITLEMENTS = ssoe.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1024;
+				CURRENT_PROJECT_VERSION = 1120;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = UXP6YEHSPW;
 				ENABLE_HARDENED_RUNTIME = YES;
